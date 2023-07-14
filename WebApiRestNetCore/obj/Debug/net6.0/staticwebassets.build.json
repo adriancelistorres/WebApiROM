@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "QaAyAWpJzBfwSSyWNXHaF1otL/6hu7U3x/ATnKeZsLw=",
+  "Source": "WebApiRestNetCore",
+  "BasePath": "_content/WebApiRestNetCore",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

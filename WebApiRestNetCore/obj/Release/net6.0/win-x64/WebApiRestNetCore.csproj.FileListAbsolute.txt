@@ -1,0 +1,107 @@
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\appsettings.Development.json
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\appsettings.json
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\WebApiRestNetCore.exe
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\WebApiRestNetCore.deps.json
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\WebApiRestNetCore.runtimeconfig.json
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\WebApiRestNetCore.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\WebApiRestNetCore.pdb
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\Bytescout.BarCodeReader.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\Microsoft.OpenApi.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\Microsoft.Win32.Registry.AccessControl.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\Microsoft.Win32.SystemEvents.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\Swashbuckle.AspNetCore.Swagger.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.CodeDom.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.ComponentModel.Composition.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.ComponentModel.Composition.Registration.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.Configuration.ConfigurationManager.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.Data.Odbc.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.Data.OleDb.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.Data.SqlClient.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.Diagnostics.PerformanceCounter.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.DirectoryServices.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.DirectoryServices.AccountManagement.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.DirectoryServices.Protocols.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.Drawing.Common.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.IO.Packaging.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.IO.Ports.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.Management.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.Private.ServiceModel.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.Reflection.Context.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.Runtime.Caching.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.Security.Cryptography.ProtectedData.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.Security.Permissions.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.ServiceModel.Duplex.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.ServiceModel.Http.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.ServiceModel.NetTcp.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.ServiceModel.Primitives.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.ServiceModel.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.ServiceModel.Security.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.ServiceModel.Syndication.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.ServiceProcess.ServiceController.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.Speech.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.Threading.AccessControl.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.Windows.Extensions.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\sni.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.csproj.AssemblyReference.cache
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.AssemblyInfoInputs.cache
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.AssemblyInfo.cs
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.csproj.CoreCompileInputs.cache
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.MvcApplicationPartsAssemblyInfo.cs
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.MvcApplicationPartsAssemblyInfo.cache
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\staticwebassets\msbuild.WebApiRestNetCore.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\staticwebassets\msbuild.build.WebApiRestNetCore.props
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\staticwebassets\msbuild.buildMultiTargeting.WebApiRestNetCore.props
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\staticwebassets\msbuild.buildTransitive.WebApiRestNetCore.props
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\staticwebassets.pack.json
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\staticwebassets.build.json
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\staticwebassets.development.json
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\scopedcss\bundle\WebApiRestNetCore.styles.css
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.csproj.CopyComplete
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\refint\WebApiRestNetCore.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.pdb
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.genruntimeconfig.cache
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\ref\WebApiRestNetCore.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\appsettings.Development.json
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\appsettings.json
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\WebApiRestNetCore.exe
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\WebApiRestNetCore.deps.json
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\WebApiRestNetCore.runtimeconfig.json
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\WebApiRestNetCore.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\WebApiRestNetCore.pdb
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\IronBarCode.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\BitMiracle.LibTiff.NET.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\IronSoftware.Drawing.Common.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\Microsoft.OpenApi.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\Microsoft.Win32.SystemEvents.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\SixLabors.Fonts.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\SixLabors.ImageSharp.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\SixLabors.ImageSharp.Drawing.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\Swashbuckle.AspNetCore.Swagger.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\bin\Release\net6.0\win-x64\System.Drawing.Common.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.csproj.AssemblyReference.cache
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.AssemblyInfoInputs.cache
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.AssemblyInfo.cs
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.csproj.CoreCompileInputs.cache
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.MvcApplicationPartsAssemblyInfo.cs
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.MvcApplicationPartsAssemblyInfo.cache
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\staticwebassets\msbuild.WebApiRestNetCore.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\staticwebassets\msbuild.build.WebApiRestNetCore.props
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\staticwebassets\msbuild.buildMultiTargeting.WebApiRestNetCore.props
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\staticwebassets\msbuild.buildTransitive.WebApiRestNetCore.props
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\staticwebassets.pack.json
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\staticwebassets.build.json
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\staticwebassets.development.json
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\scopedcss\bundle\WebApiRestNetCore.styles.css
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.csproj.CopyComplete
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\refint\WebApiRestNetCore.dll
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.pdb
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\WebApiRestNetCore.genruntimeconfig.cache
+D:\Robin_ROM\PROGRAMACION\ApíRest\Api_ConsultaArchivoBoleta - Iron\WebApiRestNetCore\WebApiRestNetCore\obj\Release\net6.0\win-x64\ref\WebApiRestNetCore.dll
