@@ -52,8 +52,8 @@
                                 var jsonres = await response.Content.ReadAsStringAsync();
                                 Console.WriteLine(jsonres);
 
-                                var itemsArray = JsonConvert.DeserializeObject<AperturaPDV[]>(jsonres);
-                                Console.WriteLine(itemsArray);
+                                //var itemsArray = JsonConvert.DeserializeObject<AperturaPDV[]>(jsonres);
+                                //Console.WriteLine(itemsArray);
 
                                 var items = JsonConvert.DeserializeObject<List<AperturaPDV>>(jsonres);
                                 Console.WriteLine(items);
@@ -63,17 +63,16 @@
                             }
                             else
                             {
-                                // La respuesta no fue exitosa, maneja el error según corresponda
+                                Console.WriteLine("ERROR EN EL BACKGROUND");
+
                             }
                         }
                         catch (Exception ex)
                         {
-                            // Manejo de la excepción
                             Console.WriteLine($"Ocurrió un error: {ex.Message}");
-                            // Otras acciones de manejo del error, si es necesario
                         }
 
-                        // Espera 3 minutos antes de realizar la próxima llamada
+                        // Espera 1 minutos antes de realizar la próxima llamada
                         await Task.Delay(TimeSpan.FromMinutes(1), stoppingToken);
 
                     }

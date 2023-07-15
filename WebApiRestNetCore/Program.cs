@@ -36,9 +36,12 @@ policy =>
 });
 
 // Add services to the container.
+
+//adrian celis
 builder.Services.AddHostedService<MyBackgroundService>();
 builder.Services.AddHttpClient<MyBackgroundService>();
 builder.Services.AddTransient<DataAcecss>(); // Agrega la dependencia del servicio DataAccess
+//
 
 
 builder.Services.AddControllers();
