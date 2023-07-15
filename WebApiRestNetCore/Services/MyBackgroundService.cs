@@ -50,15 +50,17 @@
                             {
                                 // La respuesta fue exitosa
                                 var jsonres = await response.Content.ReadAsStringAsync();
-                                Console.WriteLine(jsonres);
-
-                                //var itemsArray = JsonConvert.DeserializeObject<AperturaPDV[]>(jsonres);
-                                //Console.WriteLine(itemsArray);
+                                Console.WriteLine(jsonres);                            
 
                                 var items = JsonConvert.DeserializeObject<List<AperturaPDV>>(jsonres);
+                                int id = 1; // Inicializar el contador
+                                foreach (var item in items)
+                                {
+                                    item.ID = id++; // Asignar el ID y luego incrementar el contador
+                                }
                                 Console.WriteLine(items);
                                 _dataAccess.InsertData(items);
-
+                                items.Clear();  
 
                             }
                             else

@@ -2,6 +2,8 @@
 {
     public class AperturaPDV
     {
+        public int? ID { get; set; }
+
         public string? JefedeVenta { get; set; }
         public string? Supervisor { get; set; }
         public string? PDV { get; set; }
