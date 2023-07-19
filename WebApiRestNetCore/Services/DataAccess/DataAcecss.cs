@@ -71,9 +71,9 @@ namespace WebApiRestNetCore.Services.DataAccess
         public void InsertData(List<AperturaPDV> BE)
         {
             SqlConnection cn = new SqlConnection(_connectionString);
-            string selectQuery = "SELECT ID, JefedeVenta, Supervisor, PDV, Fecha, HoraApertura, HoraCierre, FechaHoraTransaccion FROM AperturaPDV";
-            string updateQuery = "UPDATE AperturaPDV SET JefedeVenta = @JefedeVenta, Supervisor = @Supervisor, PDV = @PDV, Fecha = @Fecha, HoraApertura = @HoraApertura, HoraCierre = @HoraCierre, FechaHoraTransaccion = @FechaHoraTransaccion WHERE ID = @ID";
-            string insertQuery = "INSERT INTO AperturaPDV (JefedeVenta, Supervisor, PDV, Fecha, HoraApertura, HoraCierre, FechaHoraTransaccion) VALUES (@JefedeVenta, @Supervisor, @PDV, @Fecha, @HoraApertura, @HoraCierre, @FechaHoraTransaccion)";
+            string selectQuery = "SELECT ID, JefedeVenta, Supervisor, PDV, Fecha, HoraApertura, HoraCierre, FechaHoraTransaccion FROM CoberturaAperturaPDV";
+            string updateQuery = "UPDATE CoberturaAperturaPDV SET JefedeVenta = @JefedeVenta, Supervisor = @Supervisor, PDV = @PDV, Fecha = @Fecha, HoraApertura = @HoraApertura, HoraCierre = @HoraCierre, FechaHoraTransaccion = @FechaHoraTransaccion WHERE ID = @ID";
+            string insertQuery = "INSERT INTO CoberturaAperturaPDV (JefedeVenta, Supervisor, PDV, Fecha, HoraApertura, HoraCierre, FechaHoraTransaccion) VALUES (@JefedeVenta, @Supervisor, @PDV, @Fecha, @HoraApertura, @HoraCierre, @FechaHoraTransaccion)";
 
             try
             {
