@@ -21,7 +21,7 @@ builder.Services.AddCors(options =>
     options.AddDefaultPolicy(
 policy =>
 {
-    policy.WithOrigins("http://localhost/", "https://localhost/","http://localhost:58893", "https://biweb.grupotawa.com", " https://biweb.grupotawa.com:443/","http://biweb.grupotawa.com/",  "http://biweb.grupotawa.com:443/")
+    policy.WithOrigins("http://localhost/", "https://localhost/","http://localhost:58893", "https://biweb.grupotawa.com", " https://biweb.grupotawa.com:443/","http://biweb.grupotawa.com/",  "http://biweb.grupotawa.com:443/", "http://localhost:4200")
                                         .AllowAnyHeader()
                                         .AllowAnyMethod();
 });
