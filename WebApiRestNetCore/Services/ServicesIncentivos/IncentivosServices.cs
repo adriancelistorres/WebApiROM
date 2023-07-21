@@ -1,22 +1,19 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System.Data.SqlClient;
-using WebApiRestNetCore.DTO;
+﻿using System.Data.SqlClient;
+using System.Data;
+using WebApiRestNetCore.DTO.DtoIncentivo;
 
-namespace WebApiRestNetCore.Controllers
+namespace WebApiRestNetCore.Services.ServicesIncentivos
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class IncentivosController : ControllerBase
+    public class IncentivosServices
     {
-        private readonly string _connectionString = "";
+        private readonly string _connectionString;
 
-        public IncentivosController(IConfiguration configuracion)
+        public IncentivosServices(IConfiguration configuracion)
         {
-            _connectionString = configuracion.GetConnectionString("SQLconexion"); ;
+            _connectionString = configuracion.GetConnectionString("SQLconexion");
         }
-        [HttpGet]
-        public ActionResult<IEnumerable<IncentivoPagoDTO>> Get(string dni)
+
+        public IEnumerable<IncentivoPagoDTO> GetIncentivosPagos(string dni)
         {
             List<IncentivoPagoDTO> incentivosPagos = new List<IncentivoPagoDTO>();
 
@@ -60,14 +57,11 @@ namespace WebApiRestNetCore.Controllers
                 }
             }
 
-            return Ok(incentivosPagos);
+            return incentivosPagos;
         }
 
-        [HttpPost("GeneralWithDNI")]
-        public ActionResult<IEnumerable<IncentivoPagoDTO>> GetGeneralWithDNI([FromBody] IncentivoPagoRequestDTO request)
+        public IEnumerable<IncentivoPagoDTO> GetGeneralIncentivosPagosWithDNI(string dni)
         {
-            string dni = request.Dni;
-
             List<IncentivoPagoDTO> incentivosPagos = new List<IncentivoPagoDTO>();
 
             using (SqlConnection connection = new SqlConnection(_connectionString))
@@ -82,7 +76,7 @@ namespace WebApiRestNetCore.Controllers
 
                         FROM
                             Incentivo_prueba i
-                            JOIN IncentivosPagos_prueba ip ON i.Id = ip.IncentivosId
+                            JOIN IncentivosPagos ip ON i.Id = ip.IncentivosId
                         WHERE
                             ip.DniPromotor = @dni AND
                             ip.Monto > 0";
@@ -98,8 +92,7 @@ namespace WebApiRestNetCore.Controllers
                             string descripcion = reader.GetString(0);
                             string empresa = reader.GetString(1);
                             decimal monto = reader.GetDecimal(2);
-                            Boolean confirmacionEntrega = reader.GetBoolean(3);
-
+                            bool confirmacionEntrega = reader.GetBoolean(3);
 
                             IncentivoPagoDTO incentivoPago = new IncentivoPagoDTO
                             {
@@ -107,7 +100,6 @@ namespace WebApiRestNetCore.Controllers
                                 Empresa = empresa,
                                 Monto = monto,
                                 ConfirmacionEntrega = confirmacionEntrega
-
                             };
 
                             incentivosPagos.Add(incentivoPago);
@@ -116,89 +108,84 @@ namespace WebApiRestNetCore.Controllers
                 }
             }
 
-            return Ok(incentivosPagos);
+            return incentivosPagos;
         }
 
-        [HttpPost("GeneralWithDNIConfirmationFalse")]
-        public ActionResult<IEnumerable<IncentivoPagoDTO>> GetGeneralWithDNIConfirmationFalse([FromBody] IncentivoPagoRequestDTO request)
+        public IEnumerable<IncentivoVistaDTO> GetGeneralIncentivosVistasWithDNIConfirmationFalse(string dni)
         {
-            string dni = request.Dni;
-
-            List<IncentivoPagoDTO> incentivosPagos = new List<IncentivoPagoDTO>();
+            List<IncentivoVistaDTO> incentivosVistas = new List<IncentivoVistaDTO>();
 
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
 
-                string query = @"SELECT
-                            i.Descripcion,
-                            i.Empresa,
-                            ip.Monto,
-                            ip.ConfirmacionEntrega
-                        FROM
-                            Incentivo_prueba i
-                            JOIN IncentivosPagos_prueba ip ON i.Id = ip.IncentivosId
-                        WHERE
-                            ip.DniPromotor = @dni AND
-                            ip.Monto > 0 AND
-                            ip.ConfirmacionEntrega = 0";
+                string storedProcedureName = "SP_ListarIncentivos";
 
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand(storedProcedureName, connection))
                 {
-                    command.Parameters.AddWithValue("@dni", dni);
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@P_DNIPROMOTOR", dni);
+                    command.Parameters.AddWithValue("@P_IDESTADO", 1);
 
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
+
                         while (reader.Read())
                         {
-                            string descripcion = reader.GetString(0);
-                            string empresa = reader.GetString(1);
-                            decimal monto = reader.GetDecimal(2);
-                            Boolean confirmacionEntrega = reader.GetBoolean(3);
+                            int id = reader.GetInt32(0);
+                            string periodoIncentivo = reader.GetString(1);
+                            string dniPromotor = reader.GetString(2);
+                            string nombreCompleto = reader.GetString(3);
+                            int idIncentivo = reader.GetInt32(4);
+                            string nombreIncentivo = reader.GetString(5);
+                            string empresa = reader.GetString(6);
+                            decimal monto = reader.GetDecimal(7);
+                            string estadoIncentivo = reader.GetString(8);
 
-                            IncentivoPagoDTO incentivoPago = new IncentivoPagoDTO
+                            IncentivoVistaDTO incentivoVista = new IncentivoVistaDTO
                             {
-                                Descripcion = descripcion,
+                                id = id,
+                                PeriodoIncentivo = periodoIncentivo,
+                                DniPromotor = dniPromotor,
+                                NombreCompleto = nombreCompleto,
+                                IdIncentivo = idIncentivo,
+                                NombreIncentivo = nombreIncentivo,
                                 Empresa = empresa,
                                 Monto = monto,
-                                ConfirmacionEntrega=confirmacionEntrega
+                                EstadoIncentivo = estadoIncentivo
                             };
 
-                            incentivosPagos.Add(incentivoPago);
+                            incentivosVistas.Add(incentivoVista);
                         }
                     }
                 }
             }
 
-            return Ok(incentivosPagos);
+            return incentivosVistas;
         }
 
-
-        [HttpPost("UpdateWithDNI")]
-        public IActionResult UpdateConfirmacionEntrega([FromBody] IncentivoPagoRequestDTO request)
+        public void UpdateConfirmacionEntrega(string dni, int idIncentivo)
         {
-            string dni = request.Dni;
-
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
 
-                string query = @"UPDATE IncentivosPagos_prueba
-                                 SET ConfirmacionEntrega = 1
-                                 WHERE DniPromotor = @dni
-                                 AND Monto > 0";
+                string query = @"UPDATE IncentivosPagos
+                         SET ConfirmacionEntrega = 1,
+                             IdEstadoAdministrativo = 4,
+                             FechaConfirmacion = GETDATE()
+                         WHERE DniPromotor = @dni
+                         AND Monto > 0
+                         AND Id = @id";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@dni", dni);
+                    command.Parameters.AddWithValue("@id", idIncentivo);
                     command.ExecuteNonQuery();
                 }
             }
-
-            return Ok();
         }
     }
 }
-
-
 
