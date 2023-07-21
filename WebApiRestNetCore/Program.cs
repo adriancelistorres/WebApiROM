@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using WebApiRestNetCore.Authorization;
 using WebApiRestNetCore.GoogleSheetsAPI;
 using WebApiRestNetCore.Services.DataAccess;
 
@@ -44,6 +45,8 @@ policy =>
 builder.Services.AddHostedService<MyBackgroundService>();
 builder.Services.AddHttpClient<MyBackgroundService>();
 builder.Services.AddTransient<DataAcecss>(); // Agrega la dependencia del servicio DataAccess
+builder.Services.AddScoped<TokenAuthorizationFilter>();
+
 //
 
 

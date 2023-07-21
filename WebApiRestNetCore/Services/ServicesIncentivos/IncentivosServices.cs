@@ -111,6 +111,27 @@ namespace WebApiRestNetCore.Services.ServicesIncentivos
             return incentivosPagos;
         }
 
+        ///------------------------------------------lo que se usa----------------------------------------------------
+
+        public bool IsDniPresent(string dni)
+        {
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+
+                string query = @"SELECT COUNT(*) FROM dbo.IncentivosPagos WHERE DniPromotor = @dni AND Monto > 0 AND ConfirmacionEntrega = 0 AND IdEstadoAdministrativo = 1";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@dni", dni);
+
+                    int count = (int)command.ExecuteScalar();
+                    return count > 0;
+                }
+            }
+        }
+
+
         public IEnumerable<IncentivoVistaDTO> GetGeneralIncentivosVistasWithDNIConfirmationFalse(string dni)
         {
             List<IncentivoVistaDTO> incentivosVistas = new List<IncentivoVistaDTO>();
