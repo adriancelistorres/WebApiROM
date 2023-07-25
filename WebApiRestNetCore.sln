@@ -5,6 +5,16 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiRestNetCore", "WebApiRestNetCore\WebApiRestNetCore.csproj", "{B09CF50A-280B-4A0F-9750-5AA1B1A951EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiRestNetCore.Application", "WebApiRestNetCore.Application\WebApiRestNetCore.Application.csproj", "{C0BD16EB-7C02-4A76-807D-3647EE05D3A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiRestNetCore.Entities", "WebApiRestNetCore.Entities\WebApiRestNetCore.Entities.csproj", "{784F6F74-8F3D-4121-A95D-47E483391214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiRestNetCore.Repository", "WebApiRestNetCore.Repository\WebApiRestNetCore.Repository.csproj", "{198FCE29-64F0-4015-86F9-0843748E8399}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiRestNetCore.Services", "WebApiRestNetCore.Services\WebApiRestNetCore.Services.csproj", "{5FA28196-9A72-48ED-8EF3-AC04CAB8F27E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiRestNetCore.DataAcces", "WebApiRestNetCore.DataAcces\WebApiRestNetCore.DataAcces.csproj", "{36F34D1E-167D-44F7-A71E-EC1251DF705A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{B09CF50A-280B-4A0F-9750-5AA1B1A951EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B09CF50A-280B-4A0F-9750-5AA1B1A951EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B09CF50A-280B-4A0F-9750-5AA1B1A951EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0BD16EB-7C02-4A76-807D-3647EE05D3A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0BD16EB-7C02-4A76-807D-3647EE05D3A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0BD16EB-7C02-4A76-807D-3647EE05D3A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0BD16EB-7C02-4A76-807D-3647EE05D3A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{784F6F74-8F3D-4121-A95D-47E483391214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{784F6F74-8F3D-4121-A95D-47E483391214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{784F6F74-8F3D-4121-A95D-47E483391214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{784F6F74-8F3D-4121-A95D-47E483391214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{198FCE29-64F0-4015-86F9-0843748E8399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{198FCE29-64F0-4015-86F9-0843748E8399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{198FCE29-64F0-4015-86F9-0843748E8399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{198FCE29-64F0-4015-86F9-0843748E8399}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FA28196-9A72-48ED-8EF3-AC04CAB8F27E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FA28196-9A72-48ED-8EF3-AC04CAB8F27E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FA28196-9A72-48ED-8EF3-AC04CAB8F27E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FA28196-9A72-48ED-8EF3-AC04CAB8F27E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36F34D1E-167D-44F7-A71E-EC1251DF705A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F34D1E-167D-44F7-A71E-EC1251DF705A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F34D1E-167D-44F7-A71E-EC1251DF705A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F34D1E-167D-44F7-A71E-EC1251DF705A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

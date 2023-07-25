@@ -119,7 +119,7 @@ namespace WebApiRestNetCore.Services.ServicesIncentivos
             {
                 connection.Open();
 
-                string query = @"SELECT COUNT(*) FROM dbo.IncentivosPagos WHERE DniPromotor = @dni AND Monto > 0 AND ConfirmacionEntrega = 0 AND IdEstadoAdministrativo = 1";
+                string query = @"SELECT COUNT(*) FROM dbo.IncentivosPagos WHERE DniPromotor = @dni AND Monto > 0 AND ConfirmacionEntrega = 0 AND IdEstadoAdministrativo = 3";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
@@ -146,7 +146,7 @@ namespace WebApiRestNetCore.Services.ServicesIncentivos
                 {
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("@P_DNIPROMOTOR", dni);
-                    command.Parameters.AddWithValue("@P_IDESTADO", 1);
+                    command.Parameters.AddWithValue("@P_IDESTADO", 3);
 
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
@@ -192,7 +192,7 @@ namespace WebApiRestNetCore.Services.ServicesIncentivos
                 connection.Open();
 
                 string query = @"UPDATE IncentivosPagos
-                         SET ConfirmacionEntrega = 1,
+                         SET ConfirmacionEntrega = 3,
                              IdEstadoAdministrativo = 4,
                              FechaConfirmacion = GETDATE()
                          WHERE DniPromotor = @dni

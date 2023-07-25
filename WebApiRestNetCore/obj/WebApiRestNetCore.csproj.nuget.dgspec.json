@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\Documents\\ROM\\IncentivosProject\\WebApiRestNetCore\\WebApiRestNetCore\\WebApiRestNetCore.csproj": {}
+    "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\Documents\\ROM\\IncentivosProject\\WebApiRestIncentivos\\WebApiRestNetCore\\WebApiRestNetCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\Documents\\ROM\\IncentivosProject\\WebApiRestNetCore\\WebApiRestNetCore\\WebApiRestNetCore.csproj": {
+    "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\Documents\\ROM\\IncentivosProject\\WebApiRestIncentivos\\WebApiRestNetCore\\WebApiRestNetCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\Documents\\ROM\\IncentivosProject\\WebApiRestNetCore\\WebApiRestNetCore\\WebApiRestNetCore.csproj",
+        "projectUniqueName": "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\Documents\\ROM\\IncentivosProject\\WebApiRestIncentivos\\WebApiRestNetCore\\WebApiRestNetCore.csproj",
         "projectName": "WebApiRestNetCore",
-        "projectPath": "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\Documents\\ROM\\IncentivosProject\\WebApiRestNetCore\\WebApiRestNetCore\\WebApiRestNetCore.csproj",
+        "projectPath": "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\Documents\\ROM\\IncentivosProject\\WebApiRestIncentivos\\WebApiRestNetCore\\WebApiRestNetCore.csproj",
         "packagesPath": "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\Documents\\ROM\\IncentivosProject\\WebApiRestNetCore\\WebApiRestNetCore\\obj\\",
+        "outputPath": "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\Documents\\ROM\\IncentivosProject\\WebApiRestIncentivos\\WebApiRestNetCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
