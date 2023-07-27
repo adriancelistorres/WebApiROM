@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\.nuget\\packages\\": {},
+    "C:\\Users\\adrian.celis\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\Documents\\ROM\\IncentivosProject\\WebApiRestIncentivos\\WebApiRestNetCore.Entities\\WebApiRestNetCore.Entities.csproj",
+      "projectUniqueName": "C:\\ROM_Projects\\nuevaversion\\WebApiRestNetCore\\WebApiRestNetCore.Entities\\WebApiRestNetCore.Entities.csproj",
       "projectName": "WebApiRestNetCore.Entities",
-      "projectPath": "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\Documents\\ROM\\IncentivosProject\\WebApiRestIncentivos\\WebApiRestNetCore.Entities\\WebApiRestNetCore.Entities.csproj",
-      "packagesPath": "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\Documents\\ROM\\IncentivosProject\\WebApiRestIncentivos\\WebApiRestNetCore.Entities\\obj\\",
+      "projectPath": "C:\\ROM_Projects\\nuevaversion\\WebApiRestNetCore\\WebApiRestNetCore.Entities\\WebApiRestNetCore.Entities.csproj",
+      "packagesPath": "C:\\Users\\adrian.celis\\.nuget\\packages\\",
+      "outputPath": "C:\\ROM_Projects\\nuevaversion\\WebApiRestNetCore\\WebApiRestNetCore.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\adrian.celis\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

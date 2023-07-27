@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eCAYXYbC1BMcbBQH0YHxS/57QRXtemrWHm79NWoH6mu3PBbyKTulhkvvl4Bq2s4UT3biPnW9H5v6HGA/voVCyQ==",
+  "dgSpecHash": "MA7/F+i0tGJ22DCVX/xN1vme7jS/DV1w+z/Igo/y0OFnCIYHFr7X0313bKEk3W1eT2h+voNrpllQNMjNFT8swg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADRIAN.DESKTOP-IF5PV5P\\Documents\\ROM\\IncentivosProject\\WebApiRestIncentivos\\WebApiRestNetCore.Entities\\WebApiRestNetCore.Entities.csproj",
+  "projectFilePath": "C:\\ROM_Projects\\nuevaversion\\WebApiRestNetCore\\WebApiRestNetCore.Entities\\WebApiRestNetCore.Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

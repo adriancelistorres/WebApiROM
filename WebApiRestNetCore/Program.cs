@@ -25,7 +25,7 @@ builder.Services.AddCors(options =>
     options.AddDefaultPolicy(
 policy =>
 {
-    policy.WithOrigins("http://localhost/", "https://localhost/","http://localhost:58893", "https://biweb.grupotawa.com", " https://biweb.grupotawa.com:443/","http://biweb.grupotawa.com/",  "http://biweb.grupotawa.com:443/", "http://localhost:4200")
+    policy.WithOrigins("http://localhost/", "https://localhost/","http://localhost:58893", "https://biweb.grupotawa.com", " https://biweb.grupotawa.com:443/","http://biweb.grupotawa.com/",  "http://biweb.grupotawa.com:443/", "http://localhost:4200","http://localhost:7117")
                                         .AllowAnyHeader()
                                         .AllowAnyMethod();
 });
@@ -57,12 +57,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>{
     options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
+        ValidateIssuer = false,
+        ValidateAudience = false,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = builder.Configuration["JWT:Issuer"],
-        ValidAudience = builder.Configuration["JWT:Audience"],
+        //ValidIssuer = builder.Configuration["JWT:Issuer"],
+        //ValidAudience = builder.Configuration["JWT:Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]))
 
     };

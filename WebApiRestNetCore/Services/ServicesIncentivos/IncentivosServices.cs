@@ -1,16 +1,22 @@
 ﻿using System.Data.SqlClient;
 using System.Data;
 using WebApiRestNetCore.DTO.DtoIncentivo;
+using System.Text;
+using System.Security.Cryptography;
 
 namespace WebApiRestNetCore.Services.ServicesIncentivos
 {
     public class IncentivosServices
     {
         private readonly string _connectionString;
+        private readonly string _connectionStringBI;
+
 
         public IncentivosServices(IConfiguration configuracion)
         {
             _connectionString = configuracion.GetConnectionString("SQLconexion");
+            _connectionStringBI= configuracion.GetConnectionString("APP_BI");
+
         }
 
         public IEnumerable<IncentivoPagoDTO> GetIncentivosPagos(string dni)
@@ -75,7 +81,7 @@ namespace WebApiRestNetCore.Services.ServicesIncentivos
 	                        ip.ConfirmacionEntrega
 
                         FROM
-                            Incentivo_prueba i
+                            Incentivos i
                             JOIN IncentivosPagos ip ON i.Id = ip.IncentivosId
                         WHERE
                             ip.DniPromotor = @dni AND
@@ -113,13 +119,60 @@ namespace WebApiRestNetCore.Services.ServicesIncentivos
 
         ///------------------------------------------lo que se usa----------------------------------------------------
 
+
+
+
+        public UsuarioDTO ValidateUser(string dni, string password)
+    {
+        UsuarioDTO usuarioRetorno = null;
+
+        using (SqlConnection connection = new SqlConnection(_connectionStringBI))
+        {
+            connection.Open();
+
+            string storedProcedureName = "SEG_ValidateUser";
+
+            using (SqlCommand command = new SqlCommand(storedProcedureName, connection))
+            {
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@USUARIO", dni);
+                command.Parameters.AddWithValue("@CLAVE", password);
+
+                using (SqlDataReader rdr = command.ExecuteReader())
+                {
+                    if (rdr.Read())
+                    {
+                        usuarioRetorno = new UsuarioDTO
+                        {
+                            IDUSUARIO = int.Parse(rdr["IDUSUARIO"].ToString()),
+                            NOMBRES = rdr["NOMBRES"].ToString(),
+                            APELLIDOPATERNO = rdr["APELLIDOPATERNO"].ToString(),
+                            APELLIDOMATERNO = rdr["APELLIDOMATERNO"].ToString(),
+                            JERARQUIA = rdr["JERARQUIA"].ToString(),
+                            IDJERARQUIA = int.Parse(rdr["IDJERARQUIA"].ToString()),
+                            CORREO = rdr["CORREO"] != null ? rdr["CORREO"].ToString() : "",
+                            USUARIO = rdr["USUARIO"].ToString(),
+                            COD_NEGOCIO = rdr["COD_NEGOCIO"].ToString(),
+                            COD_CUENTA = rdr["COD_CUENTA"].ToString(),
+                            COD_PAIS = rdr["COD_PAIS"].ToString(),
+                            CLAVE = rdr["CLAVE"].ToString(),
+                            ES_ADMIN = rdr["ES_ADMIN"].ToString(),
+                            TOKEN = rdr["TOKEN"].ToString()
+                        };
+                    }
+                }
+            }
+        }
+
+        return usuarioRetorno;
+    }
         public bool IsDniPresent(string dni)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
 
-                string query = @"SELECT COUNT(*) FROM dbo.IncentivosPagos WHERE DniPromotor = @dni AND Monto > 0 AND ConfirmacionEntrega = 0 AND IdEstadoAdministrativo = 3";
+                string query = @"SELECT COUNT(*) FROM dbo.IncentivosPagos WHERE DniPromotor = @dni AND Monto > 0 AND ConfirmacionEntrega = 0 AND IdEstadoAdministrativo = 1";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
@@ -131,6 +184,7 @@ namespace WebApiRestNetCore.Services.ServicesIncentivos
             }
         }
 
+        
 
         public IEnumerable<IncentivoVistaDTO> GetGeneralIncentivosVistasWithDNIConfirmationFalse(string dni)
         {
@@ -155,20 +209,26 @@ namespace WebApiRestNetCore.Services.ServicesIncentivos
                         {
                             int id = reader.GetInt32(0);
                             string periodoIncentivo = reader.GetString(1);
-                            string dniPromotor = reader.GetString(2);
-                            string nombreCompleto = reader.GetString(3);
-                            int idIncentivo = reader.GetInt32(4);
-                            string nombreIncentivo = reader.GetString(5);
-                            string empresa = reader.GetString(6);
-                            decimal monto = reader.GetDecimal(7);
-                            string estadoIncentivo = reader.GetString(8);
+                            DateTime fechainicio = reader.GetDateTime(2);
+                            DateTime fechafin = reader.GetDateTime(3);
+                            string dniPromotor = reader.GetString(4);
+                            string nombreCompleto = reader.GetString(5);
+                            string puntoventa = reader.GetString(6);
+                            int idIncentivo = reader.GetInt32(7);
+                            string nombreIncentivo = reader.GetString(8);
+                            string empresa = reader.GetString(9);
+                            decimal monto = reader.GetDecimal(10);
+                            string estadoIncentivo = reader.GetString(11);
 
                             IncentivoVistaDTO incentivoVista = new IncentivoVistaDTO
                             {
                                 id = id,
                                 PeriodoIncentivo = periodoIncentivo,
+                                FechaInicio=fechainicio,
+                                FechaFin=fechafin,
                                 DniPromotor = dniPromotor,
                                 NombreCompleto = nombreCompleto,
+                                PUNTOVENTA=puntoventa,
                                 IdIncentivo = idIncentivo,
                                 NombreIncentivo = nombreIncentivo,
                                 Empresa = empresa,
