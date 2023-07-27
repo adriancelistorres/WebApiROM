@@ -66,56 +66,56 @@ namespace WebApiRestNetCore.Services.ServicesIncentivos
             return incentivosPagos;
         }
 
-        public IEnumerable<IncentivoPagoDTO> GetGeneralIncentivosPagosWithDNI(string dni)
-        {
-            List<IncentivoPagoDTO> incentivosPagos = new List<IncentivoPagoDTO>();
+        //public IEnumerable<IncentivoPagoDTO> GetGeneralIncentivosPagosWithDNI(string dni)
+        //{
+        //    List<IncentivoPagoDTO> incentivosPagos = new List<IncentivoPagoDTO>();
 
-            using (SqlConnection connection = new SqlConnection(_connectionString))
-            {
-                connection.Open();
+        //    using (SqlConnection connection = new SqlConnection(_connectionString))
+        //    {
+        //        connection.Open();
 
-                string query = @"SELECT
-                            i.Descripcion,
-                            i.Empresa,
-                            ip.Monto,
-	                        ip.ConfirmacionEntrega
+        //        string query = @"SELECT
+        //                    i.Descripcion,
+        //                    i.Empresa,
+        //                    ip.Monto,
+	       //                 ip.ConfirmacionEntrega
 
-                        FROM
-                            Incentivos i
-                            JOIN IncentivosPagos ip ON i.Id = ip.IncentivosId
-                        WHERE
-                            ip.DniPromotor = @dni AND
-                            ip.Monto > 0";
+        //                FROM
+        //                    Incentivos i
+        //                    JOIN IncentivosPagos ip ON i.Id = ip.IncentivosId
+        //                WHERE
+        //                    ip.DniPromotor = @dni AND
+        //                    ip.Monto > 0";
 
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@dni", dni);
+        //        using (SqlCommand command = new SqlCommand(query, connection))
+        //        {
+        //            command.Parameters.AddWithValue("@dni", dni);
 
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            string descripcion = reader.GetString(0);
-                            string empresa = reader.GetString(1);
-                            decimal monto = reader.GetDecimal(2);
-                            bool confirmacionEntrega = reader.GetBoolean(3);
+        //            using (SqlDataReader reader = command.ExecuteReader())
+        //            {
+        //                while (reader.Read())
+        //                {
+        //                    string descripcion = reader.GetString(0);
+        //                    string empresa = reader.GetString(1);
+        //                    decimal monto = reader.GetDecimal(2);
+        //                    bool confirmacionEntrega = reader.GetBoolean(3);
 
-                            IncentivoPagoDTO incentivoPago = new IncentivoPagoDTO
-                            {
-                                Descripcion = descripcion,
-                                Empresa = empresa,
-                                Monto = monto,
-                                ConfirmacionEntrega = confirmacionEntrega
-                            };
+        //                    IncentivoPagoDTO incentivoPago = new IncentivoPagoDTO
+        //                    {
+        //                        Descripcion = descripcion,
+        //                        Empresa = empresa,
+        //                        Monto = monto,
+        //                        ConfirmacionEntrega = confirmacionEntrega
+        //                    };
 
-                            incentivosPagos.Add(incentivoPago);
-                        }
-                    }
-                }
-            }
+        //                    incentivosPagos.Add(incentivoPago);
+        //                }
+        //            }
+        //        }
+        //    }
 
-            return incentivosPagos;
-        }
+        //    return incentivosPagos;
+        //}
 
         ///------------------------------------------lo que se usa----------------------------------------------------
 
@@ -200,7 +200,7 @@ namespace WebApiRestNetCore.Services.ServicesIncentivos
                 {
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("@P_DNIPROMOTOR", dni);
-                    command.Parameters.AddWithValue("@P_IDESTADO", 3);
+                    command.Parameters.AddWithValue("@P_IDESTADO", 1);
 
                     using (SqlDataReader reader = command.ExecuteReader())
                     {

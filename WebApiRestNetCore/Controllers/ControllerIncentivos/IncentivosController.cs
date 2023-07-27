@@ -432,53 +432,52 @@ namespace WebApiRestNetCore.Controllers.ControllerIncentivos
             }
         }
 
-        [HttpPost("GeneralWithDNI")]
-        public ActionResult<IEnumerable<IncentivoPagoDTO>> GetGeneralWithDNI([FromBody] IncentivoPagoRequestDTO request)
-        {
-            string dni = request.Dni;
-            var incentivosPagos = _incentivosService.GetGeneralIncentivosPagosWithDNI(dni);
-            return Ok(incentivosPagos);
+        //[HttpPost("GeneralWithDNI")]
+        //public ActionResult<IEnumerable<IncentivoPagoDTO>> GetGeneralWithDNI([FromBody] IncentivoPagoRequestDTO request)
+        //{
+        //    string dni = request.Dni;
+        //    var incentivosPagos = _incentivosService.GetGeneralIncentivosPagosWithDNI(dni);
+        //    return Ok(incentivosPagos);
 
-        }
+        //}
 
-        // Resto del código...
 
-        [HttpPost("login")]
-        public dynamic LoginDNI([FromBody] IncentivoPagoRequestDTO request)
-        {
-            string dni = request.Dni;
-            bool isDniPresent = _incentivosService.IsDniPresent(dni);
+        //[HttpPost("login")]
+        //public dynamic LoginDNI([FromBody] IncentivoPagoRequestDTO request)
+        //{
+        //    string dni = request.Dni;
+        //    bool isDniPresent = _incentivosService.IsDniPresent(dni);
 
-            if (isDniPresent)
-            {
-                string user = dni;
+        //    if (isDniPresent)
+        //    {
+        //        string user = dni;
 
-                var jwt = _configuration.GetSection("JWT").Get<JWTmodel>();
-                var claims = new[]
-                {
-                    new Claim("dni", user)
-                };
+        //        var jwt = _configuration.GetSection("JWT").Get<JWTmodel>();
+        //        var claims = new[]
+        //        {
+        //            new Claim("dni", user)
+        //        };
 
-                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwt.Key));
-                var signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-                var token = new JwtSecurityToken(
-                    claims: claims,
-                    expires: DateTime.Now.AddMinutes(5),
-                    signingCredentials: signIn
-                );
+        //        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwt.Key));
+        //        var signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+        //        var token = new JwtSecurityToken(
+        //            claims: claims,
+        //            expires: DateTime.Now.AddMinutes(5),
+        //            signingCredentials: signIn
+        //        );
 
-                return new
-                {
-                    success = true,
-                    message = "exito",
-                    result = new JwtSecurityTokenHandler().WriteToken(token)
-                };
-            }
-            else
-            {
-                return NotFound("No tiene registros");
-            }
-        }
+        //        return new
+        //        {
+        //            success = true,
+        //            message = "exito",
+        //            result = new JwtSecurityTokenHandler().WriteToken(token)
+        //        };
+        //    }
+        //    else
+        //    {
+        //        return NotFound("No tiene registros");
+        //    }
+        //}
 
 
         

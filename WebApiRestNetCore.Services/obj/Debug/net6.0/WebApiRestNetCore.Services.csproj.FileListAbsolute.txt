@@ -1,0 +1,12 @@
+C:\ROM_Projects\nuevaversion\WebApiRestNetCore\WebApiRestNetCore.Services\bin\Debug\net6.0\WebApiRestNetCore.Services.deps.json
+C:\ROM_Projects\nuevaversion\WebApiRestNetCore\WebApiRestNetCore.Services\bin\Debug\net6.0\WebApiRestNetCore.Services.dll
+C:\ROM_Projects\nuevaversion\WebApiRestNetCore\WebApiRestNetCore.Services\bin\Debug\net6.0\WebApiRestNetCore.Services.pdb
+C:\ROM_Projects\nuevaversion\WebApiRestNetCore\WebApiRestNetCore.Services\obj\Debug\net6.0\WebApiRestNetCore.Services.csproj.AssemblyReference.cache
+C:\ROM_Projects\nuevaversion\WebApiRestNetCore\WebApiRestNetCore.Services\obj\Debug\net6.0\WebApiRestNetCore.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\ROM_Projects\nuevaversion\WebApiRestNetCore\WebApiRestNetCore.Services\obj\Debug\net6.0\WebApiRestNetCore.Services.AssemblyInfoInputs.cache
+C:\ROM_Projects\nuevaversion\WebApiRestNetCore\WebApiRestNetCore.Services\obj\Debug\net6.0\WebApiRestNetCore.Services.AssemblyInfo.cs
+C:\ROM_Projects\nuevaversion\WebApiRestNetCore\WebApiRestNetCore.Services\obj\Debug\net6.0\WebApiRestNetCore.Services.csproj.CoreCompileInputs.cache
+C:\ROM_Projects\nuevaversion\WebApiRestNetCore\WebApiRestNetCore.Services\obj\Debug\net6.0\WebApiRestNetCore.Services.dll
+C:\ROM_Projects\nuevaversion\WebApiRestNetCore\WebApiRestNetCore.Services\obj\Debug\net6.0\refint\WebApiRestNetCore.Services.dll
+C:\ROM_Projects\nuevaversion\WebApiRestNetCore\WebApiRestNetCore.Services\obj\Debug\net6.0\WebApiRestNetCore.Services.pdb
+C:\ROM_Projects\nuevaversion\WebApiRestNetCore\WebApiRestNetCore.Services\obj\Debug\net6.0\ref\WebApiRestNetCore.Services.dll
