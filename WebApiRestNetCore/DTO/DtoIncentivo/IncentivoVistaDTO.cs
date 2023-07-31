@@ -4,8 +4,8 @@
     {
         public int id { get; set; }
         public string PeriodoIncentivo { get; set; }
-        public DateTime FechaInicio { get; set; }
-        public DateTime FechaFin { get; set; }
+        public DateTime? FechaInicio { get; set; }
+        public DateTime? FechaFin { get; set; }
         public string DniPromotor { get; set; }
         public string NombreCompleto { get; set; }
         public string PUNTOVENTA { get; set; }

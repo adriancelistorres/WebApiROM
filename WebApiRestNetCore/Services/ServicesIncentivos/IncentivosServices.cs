@@ -200,7 +200,7 @@ namespace WebApiRestNetCore.Services.ServicesIncentivos
                 {
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("@P_DNIPROMOTOR", dni);
-                    command.Parameters.AddWithValue("@P_IDESTADO", 1);
+                    command.Parameters.AddWithValue("@P_IDESTADO", 3);
 
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
